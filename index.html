@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Vibes Playlist</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">Spotify Study</div>
+      <div class="menu">
+        <p class="menu-item active">Playlist</p>
+        <p class="menu-item">Top Songs</p>
+        <p class="menu-item">Student Picks</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="hero">
+        <h1>Best Study Vibe Songs</h1>
+        <p>Add song names and artists, then rank them. The playlist updates instantly.</p>
+      </section>
+
+      <section class="content">
+        <div class="card form-card">
+          <h2>Add a Song</h2>
+          <form id="songForm">
+            <input type="text" id="songName" placeholder="Song name" required />
+            <input type="text" id="artistName" placeholder="Artist name" required />
+            <input type="number" id="rankScore" placeholder="Rank (1-10)" min="1" max="10" required />
+            <button type="submit">Add Song</button>
+          </form>
+        </div>
+
+        <div class="card playlist-card">
+          <div class="playlist-header">
+            <h2>Live Playlist</h2>
+            <button id="clearBtn">Clear All</button>
+          </div>
+          <div id="playlist"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="script.js"></script></body>
+</html>
